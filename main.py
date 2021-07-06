@@ -1,6 +1,7 @@
 from RPA.Browser.Selenium import Selenium
 #from RPA.Outlook.Application import Application
 from RPA.Desktop import Desktop
+from RPA.Dialogs import Dialogs
 desktop = Desktop()
 
 browser = Selenium()
@@ -41,10 +42,13 @@ def excel_rpa():
     app.write_to_cells(row=1, column=1, value='new data')
     app.save_excel()
     app.quit_application()
+import os
+
 
 # Define a main() function that calls the other functions in order:
 def main():
     try:
+        print(os.path.dirname(os.path.abspath(__file__)))
         open_the_website(url)
         search_for(term)
         store_screenshot(screenshot_filename)
