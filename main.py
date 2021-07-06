@@ -37,7 +37,7 @@ from RPA.Excel.Application import Application
 def excel_rpa():
     app = Application()
     app.open_application()
-    app.open_workbook('input/Prueba.xlsx')
+    app.open_workbook('C:/robots/input/Prueba.xlsx')
     app.set_active_worksheet(sheetname='Hoja')
     app.write_to_cells(row=1, column=1, value='new data')
     app.save_excel()
