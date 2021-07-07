@@ -9,6 +9,6 @@ artifactsDir: output
 ignoreFiles:
   - .gitignore
 PATH:
-  - C:\\robots\\
+  - .
 PYTHONPATH:
   - .
